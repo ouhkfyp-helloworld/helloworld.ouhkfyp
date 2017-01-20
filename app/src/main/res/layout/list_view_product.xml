@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:id="@+id/productImage"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/imageView_favorite"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/myfavourite_grey"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productImage"
+        android:background="#d9e4f4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:maxLines="2"
+            android:id="@+id/tvName"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textColor="@color/md_red_900"
+            android:textSize="20sp"
+            android:maxLines="2"
+            android:id="@+id/tvPrice"
+            android:gravity="center"
+            android:layout_below="@+id/tvName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
